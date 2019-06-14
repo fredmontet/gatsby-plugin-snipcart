@@ -21,7 +21,7 @@ module.exports = {
 
 ## Options
 
-`apiKey` (required): Your Snipcart API key. If not set, it will try to find it in `process.env.GATSBY_SNIPCART_APIKEY`.
+`apiKey` (required): Your Snipcart API key. If not set, it will try to find it in `process.env.SNIPCART_API_KEY`.
 
 `autopop`: Whether or not the cart will open once a product is added. (Defaults to `false`)
 
