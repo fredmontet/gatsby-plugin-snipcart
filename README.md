@@ -1,6 +1,6 @@
 # gatsby-plugin-snipcart
 
-A plugin for using [Snipcart](https://snipcart.com/) with [Gatsby](https://www.gatsbyjs.org/).
+A plugin for using [Snipcart](https://snipcart.com/) v3 beta with [Gatsby](https://www.gatsbyjs.org/).
 
 ## Usage
 
@@ -23,10 +23,9 @@ module.exports = {
 
 `apiKey` (required): Your Snipcart API key. If not set, it will try to find it in `process.env.SNIPCART_API_KEY`.
 
-`autopop`: Whether or not the cart will open once a product is added. (Defaults to `false`)
+`js`: A Snipcart JavaScript file.
 
-`js`: A Snipcart JavaScript file. (Defaults to `https://cdn.snipcart.com/scripts/2.0/snipcart.js`)
+`styles`: A stylesheet file to link to. Set to `false` for none.
 
-`jquery`: A jQuery file to link to. Set to `false` for none. (Defaults to `https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js`)
-
-`styles`: A stylesheet file to link to. Set to `false` for none. (Defaults to `https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css`)
+`defaultLocation` (default: True): Add the Snipcart markup after the body. If you want to change its location, set this
+variable to false and add the markup yourself but don't forget to add the API key yourself.
